@@ -1,0 +1,12 @@
+{
+  "name": "cypress-sample",
+  "version": "1.0.0",
+  "repository": "https://github.com/yasu-s/cypress-sample.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "lite-server --baseDir=public"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

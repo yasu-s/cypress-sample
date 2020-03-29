@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>increment</title>
+  <script>
+    var num = 0;
+
+    function increment() {
+      const txt = document.getElementById('txt');
+      if (!txt) { return; }
+      txt.textContent = ++num;
+    };
+  </script>
+</head>
+<body>
+  <button onclick="increment();">increment</button>
+  <br />
+  <span id="txt"></span>
+</body>
+</html>
