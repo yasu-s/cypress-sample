@@ -4,9 +4,11 @@
   "repository": "https://github.com/yasu-s/cypress-sample.git",
   "license": "MIT",
   "scripts": {
-    "start": "lite-server --baseDir=public"
+    "start": "yarn && lite-server --baseDir=public",
+    "cypress:open": "yarn && cypress open"
   },
   "devDependencies": {
+    "cypress": "^4.2.0",
     "lite-server": "^2.5.4"
   }
 }
