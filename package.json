@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn && lite-server --baseDir=public",
-    "cypress:open": "yarn && cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "devDependencies": {
     "cypress": "^4.2.0",

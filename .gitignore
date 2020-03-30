@@ -113,4 +113,4 @@ dist
 
 # cypress
 cypress/videos/*
-!cypress/videos/.gitkeep
+cypress/screenshots/*
