@@ -5,6 +5,14 @@ describe('index.html', () => {
     cy.visit('./public/index.html');
   })
 
+  describe('visit', () => {
+    it('ok', () => {
+      // verify
+      cy.get('[data-testid="content"]')
+        .should('not.contain', '1');
+    });
+  });
+
   describe('increment', () => {
     it('ok: one click', () => {
       // exercise
@@ -13,8 +21,7 @@ describe('index.html', () => {
 
       // verify
       cy.get('[data-testid="content"]')
-        .should('exist')
-        .contains('1');
+        .should('contain', '1');
     });
 
     it('ok: two click', () => {
@@ -25,8 +32,7 @@ describe('index.html', () => {
 
       // verify
       cy.get('[data-testid="content"]')
-        .should('exist')
-        .contains('2');
+        .should('contain', '2');
     });
   });
 })
