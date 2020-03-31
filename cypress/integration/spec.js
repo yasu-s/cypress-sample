@@ -2,7 +2,8 @@
 
 describe('index.html', () => {
   beforeEach(() => {
-    cy.visit('./public/index.html');
+    const url = process.env.URL || './public/index.html';
+    cy.visit(url);
   })
 
   describe('visit', () => {
