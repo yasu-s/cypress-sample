@@ -2,7 +2,7 @@
 
 describe('index.html', () => {
   beforeEach(() => {
-    const url = process.env.URL || './public/index.html';
+    const url = Cypress.env('URL') || './public/index.html';
     cy.visit(url);
   })
 
