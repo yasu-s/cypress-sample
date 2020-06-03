@@ -11,6 +11,8 @@ describe('index.html', () => {
       // verify
       cy.get('[data-testid="content"]')
         .should('not.contain', '1');
+
+      cy.screenshot('visit/ok');
     });
   });
 
@@ -23,6 +25,8 @@ describe('index.html', () => {
       // verify
       cy.get('[data-testid="content"]')
         .should('contain', '1');
+
+      cy.screenshot('increment/one-click');
     });
 
     it('ok: two click', () => {
@@ -34,6 +38,8 @@ describe('index.html', () => {
       // verify
       cy.get('[data-testid="content"]')
         .should('contain', '2');
+
+      cy.screenshot('increment/two-click');
     });
   });
 })
